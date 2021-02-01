@@ -1,0 +1,186 @@
+@startuml
+class com.dji.daw.MapWidgetActivity {
+- {static} String TAG
+- MapWidget mapWidget
+- ImageView selectedIcon
+- int[] iconIds
++ {static} String MAP_PROVIDER
+- Spinner iconSpinner
+- SeekBar lineWidthPicker
+- int lineWidthValue
+- TextView lineColor
+- MapOverlay mapOverlay
+- GroundOverlay groundOverlay
+- TileOverlay tileOverlay
+- int mapProvider
+- Map hereMap
+- GoogleMap googleMap
+- AMap aMap
+- ScrollView scrollView
+- ImageButton btnPanel
+- boolean isPanelOpen
+- List<DJIMarker> markerList
++ void onCreate(Bundle)
++ void onCheckedChanged(CompoundButton,boolean)
++ void onCheckedChanged(RadioGroup,int)
++ void onClick(View)
+- void movePanel()
+- {static} Bitmap getBitmap(VectorDrawable)
+# void onResume()
+# void onPause()
+# void onDestroy()
+# void onSaveInstanceState(Bundle)
++ void onLowMemory()
+- void showSelectFlyZoneDialog()
++ void onItemSelected(AdapterView<?>,View,int,long)
++ void onNothingSelected(AdapterView<?>)
+- void addOverlay()
++ void onProgressChanged(SeekBar,int,boolean)
++ void onStartTrackingTouch(SeekBar)
++ void onStopTrackingTouch(SeekBar)
+- void setRandomLineColor()
+}
+class com.dji.daw.custom.CustomizedBatteryWidget {
+- TextView batteryValue
+- ImageView batteryIcon
+- int batteryIconRes
+- int batteryIconErrorRes
++ void initView(Context,AttributeSet,int)
+# BaseDynamicWidgetAppearances getWidgetAppearances()
++ void onBatteryPercentageChange(int)
++ void onBatteryConnectionStateChange(ConnectionState)
+- void updateBatteryIcon()
+}
+class com.dji.daw.CompleteWidgetActivity {
+- MapWidget mapWidget
+- ViewGroup parentView
+- FPVWidget fpvWidget
+- FPVWidget secondaryFPVWidget
+- RelativeLayout primaryVideoView
+- FrameLayout secondaryVideoView
+- boolean isMapMini
+- int height
+- int width
+- int margin
+- int deviceWidth
+- int deviceHeight
+# void onCreate(Bundle)
+- void onViewClick(View)
+- void resizeFPVWidget(int,int,int,int)
+- void reorderCameraCapturePanel()
+- void swapVideoSource()
+- void updateSecondaryVideoVisibility(boolean)
+- void hidePanels()
+# void onResume()
+# void onPause()
+# void onDestroy()
+# void onSaveInstanceState(Bundle)
++ void onLowMemory()
+}
+class com.dji.daw.CompleteWidgetActivity.ResizeAnimation {
+- View mView
+- int mToHeight
+- int mFromHeight
+- int mToWidth
+- int mFromWidth
+- int mMargin
+# void applyTransformation(float,Transformation)
+}
+class com.dji.daw.MainActivity {
+- {static} String TAG
+- {static} String LAST_USED_BRIDGE_IP
+- AtomicBoolean isRegistrationInProgress
+- {static} boolean isAppStarted
+- DJISDKManager.SDKManagerCallback registrationCallback
+- {static} String[] REQUIRED_PERMISSION_LIST
+- {static} int REQUEST_PERMISSION_CODE
+- List<String> missingPermission
+- EditText bridgeModeEditText
+- void loginAccount()
++ {static} boolean isStarted()
+# void onCreate(Bundle)
+# void onDestroy()
+- void checkAndRequestPermissions()
++ void onRequestPermissionsResult(int,String[],int[])
+- void startSDKRegistration()
++ void onClick(View)
++ boolean onMenuItemClick(MenuItem)
++ {static} boolean isHereMapsSupported()
++ {static} boolean isGoogleMapsSupported(Context)
+- void handleBridgeIPTextChange()
+}
+class com.dji.daw.CustomizedWidgetsActivity {
+- FPVWidget fpvWidget
+- FPVOverlayWidget fpvOverlayWidget
+- FPVWidget secondaryFpvWidget
+- boolean isOriginalSize
+# void onCreate(Bundle)
+- void initView()
++ void resizeView()
++ void onClick(View)
++ void onCheckedChanged(CompoundButton,boolean)
+}
+class com.dji.daw.FlyZoneDialogView {
+- CheckBox all
+- CheckBox auth
+- CheckBox warning
+- CheckBox enhancedWarning
+- CheckBox restricted
+- Button btnCustomUnlockColor
+- Button btnCustomUnlockSync
++ void init(MapWidget)
++ void initCheckboxes(MapWidget)
++ void initColors(MapWidget)
+- GradientDrawable getBackground(int,int,float)
++ boolean isFlyZoneEnabled(FlyZoneCategory)
+}
+class com.dji.daw.custom.CustomizedPreFlightWidget {
+- Paint borderPaint
+- Paint indicatorPaint
+- {static} int STROKE_WIDTH
+- int width
+- int height
++ void initView(Context,AttributeSet,int)
+# void onMeasure(int,int)
+# void onDraw(Canvas)
++ void onStatusChange(String,StatusType,boolean)
+}
+class com.dji.daw.OnDJIUSBAttachedReceiver {
++ void onReceive(Context,Intent)
+}
+class com.dji.daw.DensityUtil {
++ {static} int dip2px(Context,float)
++ {static} int px2dip(Context,float)
+}
+class com.dji.daw.MApplication {
++ void onCreate()
+# void attachBaseContext(Context)
+}
+class com.dji.daw.DJIConnectionControlActivity {
++ {static} String ACCESSORY_ATTACHED
+# void onCreate(Bundle)
+}
+
+
+com.dji.daw.OnCheckedChangeListener <|.. com.dji.daw.MapWidgetActivity
+com.dji.daw.OnCheckedChangeListener <|.. com.dji.daw.MapWidgetActivity
+com.dji.daw.OnClickListener <|.. com.dji.daw.MapWidgetActivity
+com.dji.daw.OnItemSelectedListener <|.. com.dji.daw.MapWidgetActivity
+com.dji.daw.OnSeekBarChangeListener <|.. com.dji.daw.MapWidgetActivity
+android.app.Activity <|-- com.dji.daw.MapWidgetActivity
+dji.ux.widget.BatteryWidget <|-- com.dji.daw.custom.CustomizedBatteryWidget
+android.app.Activity <|-- com.dji.daw.CompleteWidgetActivity
+com.dji.daw.CompleteWidgetActivity +.. com.dji.daw.CompleteWidgetActivity.ResizeAnimation
+com.dji.daw.Animation <|-- com.dji.daw.CompleteWidgetActivity.ResizeAnimation
+com.dji.daw.OnClickListener <|.. com.dji.daw.MainActivity
+com.dji.daw.OnMenuItemClickListener <|.. com.dji.daw.MainActivity
+android.app.Activity <|-- com.dji.daw.MainActivity
+com.dji.daw.OnClickListener <|.. com.dji.daw.CustomizedWidgetsActivity
+com.dji.daw.OnCheckedChangeListener <|.. com.dji.daw.CustomizedWidgetsActivity
+android.app.Activity <|-- com.dji.daw.CustomizedWidgetsActivity
+android.widget.ScrollView <|-- com.dji.daw.FlyZoneDialogView
+com.dji.daw.custom.PreFlightStatusWidget <|-- com.dji.daw.custom.CustomizedPreFlightWidget
+android.content.BroadcastReceiver <|-- com.dji.daw.OnDJIUSBAttachedReceiver
+android.app.Application <|-- com.dji.daw.MApplication
+android.app.Activity <|-- com.dji.daw.DJIConnectionControlActivity
+@enduml
