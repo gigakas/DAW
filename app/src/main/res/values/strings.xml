@@ -87,5 +87,14 @@
     <string name="vamos_a_volar">Vamos a volar!</string>
     <string name="localiza_tus_drones">Localiza Tus Drones</string>
     <string name="programa_tus_vuelos">Programa Tus Vuelos</string>
+    <string name="registro">Registro</string>
+    <string name="nombres">Nombres</string>
+    <string name="email">Email</string>
+    <string name="registrar">Registrar</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="pais">País</string>
+    <string name="passwordRegistro">Password</string>
+    <string name="passwordConfirmar">Password</string>
+
 
 </resources>

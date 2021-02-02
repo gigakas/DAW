@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroUsuario">
+
+  <TextView
+      android:id="@+id/textViewRegistro"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="@string/registro"
+      android:textSize="30sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.499"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/editTextTextNombres"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="100dp"
+      android:ems="10"
+      android:hint="@string/nombres"
+      android:inputType="textPersonName"
+      android:text="@string/nombres"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewRegistro"
+      android:importantForAutofill="no" />
+
+  <EditText
+      android:id="@+id/editTextTextApellidos"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginEnd="100dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/apellidos"
+      android:inputType="textPersonName"
+      android:text="@string/apellidos"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextNombres" />
+
+  <EditText
+      android:id="@+id/editTextTextPais"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginEnd="100dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/pais"
+      android:inputType="textPersonName"
+      android:text="@string/pais"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextApellidos" />
+
+  <EditText
+      android:id="@+id/editTextTextEmail"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginEnd="100dp"
+      android:ems="10"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+      android:text="@string/email"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextPais"
+      android:importantForAutofill="no" />
+
+  <EditText
+      android:id="@+id/editTextTextPassword"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginEnd="100dp"
+      android:ems="10"
+      android:hint="@string/passwordRegistro"
+      android:inputType="textPersonName|textPassword"
+      android:text="@string/passwordRegistro"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail"
+      android:importantForAutofill="no" />
+
+  <EditText
+      android:id="@+id/editTextTextPasswordConfirm"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginEnd="100dp"
+      android:ems="10"
+      android:hint="@string/passwordConfirmar"
+      android:inputType="textPassword"
+      android:text="@string/passwordConfirmar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+      android:importantForAutofill="no" />
+
+  <Button
+      android:id="@+id/buttonRegistroNuevoUsuario"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="140dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="140dp"
+      android:backgroundTint="#388E3C"
+      android:text="@string/registrar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordConfirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>
