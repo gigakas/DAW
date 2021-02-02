@@ -27,7 +27,10 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:label, android:theme" >
-        <activity android:name=".RegistroUsuario" >
+
+        <activity android:name=".RegistroUsuario"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape">
         </activity>
         <activity
             android:name=".Bienvenidos"
