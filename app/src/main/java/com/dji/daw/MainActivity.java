@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -55,6 +56,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Popu
     private static final String LAST_USED_BRIDGE_IP = "bridgeip";
     private final AtomicBoolean isRegistrationInProgress = new AtomicBoolean(false);
     private static boolean isAppStarted = false;
+
     private final DJISDKManager.SDKManagerCallback registrationCallback = new DJISDKManager.SDKManagerCallback() {
 
         @Override

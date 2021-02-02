@@ -56,7 +56,6 @@
             android:name="com.here.android.mpa.service.MapService"
             android:label="HereMapService">
             <intent-filter>
-
                 <!-- Note, action name should not be changed. -->
                 <action android:name="com.here.android.mpa.service.MapService.v3" />
             </intent-filter>
@@ -65,17 +64,22 @@
             android:name="com.amap.api.v2.apikey"
             android:value="Enter your API key here" />
 
+<!--Actividades app-->
+
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
             android:theme="@style/AppTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            ></activity>
         <activity
             android:name=".ControlUSBConexionActividad"
             android:theme="@android:style/Theme.Translucent">
