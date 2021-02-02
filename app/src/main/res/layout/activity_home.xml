@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/complete_ui_widgets2"
+        android:id="@+id/BotonVolarAhora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -60,5 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.157"
-        app:srcCompat="@drawable/ic_drone" />
+        app:srcCompat="@drawable/ic_drone"
+        android:contentDescription="TODO"
+        android:focusable="true" />
 </androidx.constraintlayout.widget.ConstraintLayout>
