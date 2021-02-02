@@ -16,7 +16,8 @@ class Login : AppCompatActivity() {
 
         hideSystemUI()
 
-        val btnIngresar = findViewById(R.id.buttonLogin) as Button
+        val btnIngresar = findViewById<Button>(R.id.buttonLogin)
+        val btnRegistroUsuario = findViewById<Button>(R.id.buttonRegistroNuevoUsuario)
 
 
         btnIngresar.setOnClickListener {
@@ -29,7 +30,15 @@ class Login : AppCompatActivity() {
             }, 3000)
         }
 
+        btnRegistroUsuario.setOnClickListener {
 
+            Toast.makeText(this@Login, "Pulse registro", Toast.LENGTH_SHORT).show()
+            Handler(Looper.getMainLooper()).postDelayed({
+                val i = Intent(this@Login, RegistroUsuario::class.java)
+                startActivity(i) //start new activity
+                finish()
+            }, 3000)
+        }
 
     }
 

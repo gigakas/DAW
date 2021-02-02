@@ -76,7 +76,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="ganp">GANP</string>
     <string name="name">Name</string>
-    <string name="email">Email</string>
+    <string name="emailLogin">Email</string>
     <string name="ingresar">Ingresar</string>
     <string name="registrarse">Registrarse</string>
     <string name="recuperar_password">Recuperar Password</string>

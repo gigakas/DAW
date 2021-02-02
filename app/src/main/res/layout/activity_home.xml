@@ -20,6 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/medium_blue"
             android:text="Profile" />
 
         <Button
@@ -27,6 +28,7 @@
             android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#00796B"
             android:text="Configuración" />
 
         <Button
@@ -34,6 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#00796B"
             android:text="MULTIMEDIA" />
 
         <Button
@@ -41,6 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#00796B"
             android:text="Eventos" />
 
     </LinearLayout>
