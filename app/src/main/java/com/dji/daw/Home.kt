@@ -3,9 +3,7 @@ package com.dji.daw
 import android.content.Intent
 import android.os.*
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
