@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="key_dji_API">e5dd16b956fb1bd4eb396243</string>
-    <string name="key_googleMaps_API">AIzaSyBOzS70K8KGdwV5XIrHNgFtlfpVqOE2coE</string>
+    <string name="key_dji_API">Poner clave aqui</string>
+    <string name="key_googleMaps_API">Poner clave aqui</string>
 </resources>
