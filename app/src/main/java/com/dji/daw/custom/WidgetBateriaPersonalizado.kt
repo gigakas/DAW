@@ -20,7 +20,7 @@ class WidgetBateriaPersonalizado @JvmOverloads constructor(context: Context?, at
     private var batteryIconRes = 0
     private var batteryIconErrorRes = 0
 
-    /** Cmabiar el layout del widget  */
+    /** Cambiar el layout del widget  */
     override fun initView(context: Context, attrs: AttributeSet, defStyle: Int) {
         val inflater = LayoutInflater.from(context)
         val view = inflater.inflate(R.layout.customized_battery_widget, this)

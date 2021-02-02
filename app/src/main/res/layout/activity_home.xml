@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButtonVolar"
+        android:id="@+id/complete_ui_widgets2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
