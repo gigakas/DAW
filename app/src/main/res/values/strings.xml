@@ -81,6 +81,11 @@
     <string name="registrarse">Registrarse</string>
     <string name="recuperar_password">Recuperar Password</string>
     <string name="v_1_0">V.1.0</string>
-    <string name="todo">TODO</string>
     <string name="password">password</string>
+    <string name="con_daw_puedes_programar_tus_rutas_de_vuelo_y_almacenarlas_de_manera_automatizada">Con DAW puedes programar tus rutas de vuelo y almacenarlas de manera automatizada</string>
+    <string name="ahorra_tiempo">Ahorra Tiempo</string>
+    <string name="vamos_a_volar">Vamos a volar!</string>
+    <string name="localiza_tus_drones">Localiza Tus Drones</string>
+    <string name="programa_tus_vuelos">Programa Tus Vuelos</string>
+
 </resources>

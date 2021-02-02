@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dji.daw">
+    package="com.dji.daw" >
     <!-- DJI SDK need these permissions -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -26,18 +26,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        tools:replace="android:label, android:theme">
-        <activity android:name=".Login"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape">
-
+        tools:replace="android:label, android:theme" >
+        <activity android:name=".RegistroUsuario" >
         </activity>
-        <!--<activity
+        <activity
+            android:name=".Bienvenidos"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Login"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" />
+        <!--
+<activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login"
             tools:ignore="MissingClass" />
         -->
-
         <!-- DJI SDK -->
         <uses-library
             android:name="org.apache.http.legacy"
@@ -62,7 +67,7 @@
 
         <service
             android:name="com.here.android.mpa.service.MapService"
-            android:label="HereMapService">
+            android:label="HereMapService" >
             <intent-filter>
 
                 <!-- Note, action name should not be changed. -->
@@ -76,7 +81,7 @@
             android:name=".Splash"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,11 +90,10 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
-        </activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".ControlUSBConexionActividad"
-            android:theme="@android:style/Theme.Translucent">
+            android:theme="@android:style/Theme.Translucent" >
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
             </intent-filter>
