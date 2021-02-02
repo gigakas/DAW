@@ -28,6 +28,7 @@ class Splash : AppCompatActivity() {
                 or View.SYSTEM_UI_FLAG_FULLSCREEN)
     }
 
+
     private fun showSystemUI() {
         window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                 or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
@@ -38,7 +39,7 @@ class Splash : AppCompatActivity() {
     private fun splashSleep(){
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val i = Intent(this@Splash, MainActivity::class.java)
+            val i = Intent(this@Splash, Login::class.java)
             startActivity(i) //start new activity
             finish()
         }, 5000)
