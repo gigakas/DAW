@@ -27,28 +27,23 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:label, android:theme">
-        <activity android:name=".Home"
+        <activity android:name=".Profile"></activity>
+        <activity
+            android:name=".Home"
             android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape">
-        </activity>
-
+            android:screenOrientation="sensorLandscape"></activity>
         <activity
             android:name=".RegistroUsuario"
             android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape">
-        </activity>
-
+            android:screenOrientation="sensorLandscape"></activity>
         <activity
             android:name=".Bienvenidos"
             android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape">
-        </activity>
-
+            android:screenOrientation="sensorLandscape"></activity>
         <activity
             android:name=".Login"
             android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape" >
-        </activity>
+            android:screenOrientation="sensorLandscape"></activity>
         <!--
 <activity
             android:name=".ui.login.LoginActivity"
@@ -119,22 +114,19 @@
             android:label="Default Widgets"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
         <activity
             android:name=".WidgetsActividadesPersonalizadas"
             android:label="Customized Widgets"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
         <activity
             android:name=".MapWidgetActivity"
             android:label="Map Widget"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/MapTheme" >
-        </activity>
+            android:theme="@style/MapTheme"></activity>
     </application>
 
 </manifest>

@@ -95,6 +95,11 @@
     <string name="pais">País</string>
     <string name="passwordRegistro">Password</string>
     <string name="passwordConfirmar">Password</string>
+    <string name="nombre_apellido">Nombre - Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="fecharegistro">FechaRegistro</string>
+    <string name="tiempovuelo">TiempoVuelo</string>
+    <string name="todo">TODO</string>
 
 
 </resources>
