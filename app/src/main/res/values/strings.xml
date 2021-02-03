@@ -100,6 +100,13 @@
     <string name="fecharegistro">FechaRegistro</string>
     <string name="tiempovuelo">TiempoVuelo</string>
     <string name="todo">TODO</string>
+    <string name="direccion_servidor">Direccion Servidor</string>
+    <string name="configuracion_red">Configuracion Red</string>
+    <string name="nuevo_password">Nuevo Password</string>
+    <string name="cambio_password">Cambio Password</string>
+    <string name="puerto">Puerto</string>
+    <string name="password_anterior">Password Anterior</string>
+    <string name="confirmar">Confirmar</string>
 
 
 </resources>
