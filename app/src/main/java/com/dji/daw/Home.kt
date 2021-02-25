@@ -19,7 +19,7 @@ class Home : AppCompatActivity() {
         fab.setOnClickListener {
             Toast.makeText(this@Home, "A volar", Toast.LENGTH_SHORT).show()
             Handler(Looper.getMainLooper()).postDelayed({
-                val i = Intent(this@Home, MainActivity::class.java)
+                val i = Intent(this@Home, TestComponent::class.java)
                 startActivity(i) //start new activity
                 finish()
             }, 3000)

@@ -11,7 +11,7 @@ import dji.sdk.sdkmanager.DJISDKManager
  */
 class DetectarControlUSB : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (!MainActivity.isStarted()) {
+        if (!TestComponent.isStarted()) {
             val startIntent = context.packageManager
                     .getLaunchIntentForPackage(context.packageName)
             startIntent!!.flags = (Intent.FLAG_ACTIVITY_REORDER_TO_FRONT

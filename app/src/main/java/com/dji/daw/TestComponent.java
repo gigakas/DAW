@@ -47,7 +47,7 @@ import dji.sdk.useraccount.UserAccountManager;
  *
  */
 
-public class MainActivity extends Activity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
+public class TestComponent extends Activity implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
     private static final String TAG = "MainActivity";
     private static final String LAST_USED_BRIDGE_IP = "bridgeip";
     private final AtomicBoolean isRegistrationInProgress = new AtomicBoolean(false);
@@ -254,7 +254,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Popu
 
     private void startSDKRegistration() {
         if (isRegistrationInProgress.compareAndSet(false, true)) {
-            AsyncTask.execute(() -> DJISDKManager.getInstance().registerApp(MainActivity.this, registrationCallback));
+            AsyncTask.execute(() -> DJISDKManager.getInstance().registerApp(TestComponent.this, registrationCallback));
         }
     }
 

@@ -122,7 +122,7 @@
             android:value="Enter your API key here" /> <!-- Actividades app -->
 
         <activity
-            android:name=".MainActivity"
+            android:name=".TestComponent"
             android:screenOrientation="landscape" />
         <activity
             android:name=".ControlUSBConexionActividad"
