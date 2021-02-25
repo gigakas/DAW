@@ -132,6 +132,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Popu
     public static boolean isStarted() {
         return isAppStarted;
     }
+
     private static final String[] REQUIRED_PERMISSION_LIST = new String[] {
         Manifest.permission.VIBRATE, // Gimbal rotacion
         Manifest.permission.ACCESS_WIFI_STATE, // WIFI productos conectados
