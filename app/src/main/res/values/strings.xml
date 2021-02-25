@@ -95,10 +95,10 @@
     <string name="pais">País</string>
     <string name="passwordRegistro">Password</string>
     <string name="passwordConfirmar">Password</string>
-    <string name="nombre_apellido">Nombre - Apellido</string>
-    <string name="correo">Correo</string>
-    <string name="fecharegistro">FechaRegistro</string>
-    <string name="tiempovuelo">TiempoVuelo</string>
+    <string name="nombre_apellido">Nombre:</string>
+    <string name="correo">Correo:</string>
+    <string name="fecharegistro">FechaRegistro:</string>
+    <string name="tiempovuelo">TiempoVuelo:</string>
     <string name="todo">TODO</string>
     <string name="direccion_servidor">Direccion Servidor</string>
     <string name="configuracion_red">Configuracion Red</string>
@@ -107,6 +107,13 @@
     <string name="puerto">Puerto</string>
     <string name="password_anterior">Password Anterior</string>
     <string name="confirmar">Confirmar</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="profile">Profile</string>
+    <string name="multimedia">MULTIMEDIA</string>
+    <string name="eventos">Eventos</string>
+    <string name="volarBtn">Volar</string>
+    <string name="volarBtnText">Volar</string>
+    <string name="regresarBtn">Regresar</string>
 
 
 </resources>

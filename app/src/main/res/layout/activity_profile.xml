@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
     tools:context=".Profile">
 
     <ImageView
         android:id="@+id/imageViewProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="162dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.452"
+        tools:srcCompat="@drawable/ic_splashsinfondo" />
 
     <TextView
         android:id="@+id/textViewNombreFull"
@@ -49,8 +50,8 @@
 
     <TextView
         android:id="@+id/textViewFechaRegistro"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="284dp"
@@ -64,8 +65,8 @@
 
     <TextView
         android:id="@+id/textViewTiempoVuelo"
-        android:layout_width="83dp"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="317dp"
@@ -75,5 +76,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFechaRegistro" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFechaRegistro"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/buttonRegresarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regresarBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
 </androidx.constraintlayout.widget.ConstraintLayout>
