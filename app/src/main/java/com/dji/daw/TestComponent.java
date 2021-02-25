@@ -9,7 +9,8 @@ import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+//import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -311,11 +312,7 @@ public class TestComponent extends Activity implements View.OnClickListener, Pop
     public static boolean isHereMapsSupported() {
         String abi;
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-            abi = Build.CPU_ABI;
-        } else {
-            abi = Build.SUPPORTED_ABIS[0];
-        }
+        abi = Build.SUPPORTED_ABIS[0];
         DJILog.d(TAG, "abi=" + abi);
 
         //Arquitecturas posible para procesadores strings armeabi, armeabi-v7a, arm64-v8a, x86, x86_64, mips, mips64.
