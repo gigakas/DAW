@@ -37,6 +37,7 @@ class WidgetPrincipalActividad : Activity() {
     private var margin = 0
     private var deviceWidth = 0
     private var deviceHeight = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_default_widgets)
