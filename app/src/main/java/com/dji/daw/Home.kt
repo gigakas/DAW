@@ -6,10 +6,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.dji.daw.controles.AppCompatActivityFullScreen
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
-class Home : AppCompatActivity() {
+class Home : AppCompatActivityFullScreen() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)

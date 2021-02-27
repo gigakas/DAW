@@ -8,8 +8,9 @@ import android.os.Looper
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.dji.daw.controles.AppCompatActivityFullScreen
 
-class Profile : AppCompatActivity() {
+class Profile : AppCompatActivityFullScreen() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)

@@ -3,8 +3,9 @@ package com.dji.daw
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.dji.daw.controles.AppCompatActivityFullScreen
 
-class RegistroUsuario : AppCompatActivity() {
+class RegistroUsuario : AppCompatActivityFullScreen() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_usuario)

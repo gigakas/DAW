@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.AppCompat"
+    android:keepScreenOn="true"
     tools:context=".Profile">
 
     <ImageView
         android:id="@+id/imageViewProfile"
         android:layout_width="162dp"
         android:layout_height="194dp"
-        android:contentDescription="@string/todo"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.366"

@@ -23,6 +23,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
+import com.dji.daw.controles.AppCompatActivityFullScreen
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import dji.common.error.DJIError
@@ -45,9 +46,10 @@ import java.util.concurrent.atomic.AtomicBoolean
  * Actividad que muestra opciones de prueba - para usos de programacion
  *
  */
-class TestComponent : Activity(), View.OnClickListener, PopupMenu.OnMenuItemClickListener {
+class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, PopupMenu.OnMenuItemClickListener {
     private val isRegistrationInProgress = AtomicBoolean(false)
     private val registrationCallback: SDKManagerCallback = object : SDKManagerCallback {
+
         override fun onRegister(error: DJIError) {
             isRegistrationInProgress.set(false)
             if (error === DJISDKError.REGISTRATION_SUCCESS) {
@@ -105,6 +107,9 @@ class TestComponent : Activity(), View.OnClickListener, PopupMenu.OnMenuItemClic
 
     private val missingPermission: MutableList<String> = ArrayList()
     private var bridgeModeEditText: EditText? = null
+
+
+    /// aqui inicia
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_testcomponent)
@@ -131,7 +136,7 @@ class TestComponent : Activity(), View.OnClickListener, PopupMenu.OnMenuItemClic
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable) {
-                if (s != null && s.toString().contains("\n")) {
+                if (s.toString().contains("\n")) {
                     // detectar si el usaurio escribe algun texto
                     val currentText = bridgeModeEditText!!.text.toString()
                     bridgeModeEditText!!.setText(currentText.substring(0, currentText.indexOf('\n')))
