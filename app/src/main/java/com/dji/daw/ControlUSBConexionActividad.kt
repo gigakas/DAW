@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.view.View
 
 /**
- * This activity will launch when a USB accessory is attached and attempt to connect to the USB
- * accessory.
+ * Detectar la conexion del mando del drone via usb
+ *
  */
 class ControlUSBConexionActividad : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

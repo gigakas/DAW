@@ -26,7 +26,6 @@ class Home : AppCompatActivityFullScreen() {
             }, 3000)
         }
 
-
         val buttonProfile = findViewById<Button>(R.id.buttonProfile)
         buttonProfile.setOnClickListener {
 

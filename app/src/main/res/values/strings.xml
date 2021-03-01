@@ -99,7 +99,6 @@
     <string name="correo">Correo:</string>
     <string name="fecharegistro">FechaRegistro:</string>
     <string name="tiempovuelo">TiempoVuelo:</string>
-    <string name="todo">TODO</string>
     <string name="direccion_servidor">Direccion Servidor</string>
     <string name="configuracion_red">Configuracion Red</string>
     <string name="nuevo_password">Nuevo Password</string>
@@ -114,6 +113,21 @@
     <string name="volarBtn">Volar</string>
     <string name="volarBtnText">Volar</string>
     <string name="regresarBtn">Regresar</string>
-
+    <string name="map_settings">Map Settings</string>
+    <string name="center_map">Center Map</string>
+    <string name="map_overlay">Map Overlay</string>
+    <string name="flyzone_settings">FlyZone Settings</string>
+    <string name="flight_settings">Flight Settings</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="icon_change_setting">Icon Change Setting</string>
+    <string name="line_color_setting">Line Color Setting</string>
+    <string name="all">All</string>
+    <string name="authorization">Authorization</string>
+    <string name="warning">Warning</string>
+    <string name="enhanced_warning">Enhanced Warning</string>
+    <string name="restricted">Restricted</string>
+    <string name="maximum_height">Maximum Height</string>
+    <string name="self_unlocked">Self Unlocked</string>
+    <string name="custom_unlocked_zone">Custom Unlocked Zone</string>
 
 </resources>
