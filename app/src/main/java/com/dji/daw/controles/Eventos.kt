@@ -9,15 +9,5 @@ import androidx.core.content.ContextCompat.startActivity
 
 class Eventos() {
 
-/*    fun btnClick(contextoActual: Context, contextoDestino: Context, retardo: Long){
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            val i = Intent(contextoActual, contextoDestino::class.java)
-            startActivity(i) //iniciar nueva actividad
-
-        }, retardo)
-
-    }*/
-
 
 }
