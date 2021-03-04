@@ -3,5 +3,5 @@
  Integracion SDK DJI, prototipo
  
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/la1viJwSr5o)
+[![Watch the video]](https://youtu.be/la1viJwSr5o)
 
