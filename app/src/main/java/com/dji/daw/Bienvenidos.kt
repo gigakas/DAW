@@ -10,35 +10,40 @@ import android.widget.Button
 import android.widget.Toast
 import com.dji.daw.controles.AppCompatActivityFullScreen
 
-class Bienvenidos : AppCompatActivityFullScreen() {
+class Bienvenidos : AppCompatActivityFullScreen(), View.OnClickListener {
+
+    protected var avolarBtn: Button? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bienvenidos)
+        iniciarUI()
 
-        hideSystemUI()
+    }
 
-        val btnVamosaVolar = findViewById<Button>(R.id.buttonVamosAVolar)
+    private fun iniciarUI() {
+        avolarBtn = findViewById<View>(R.id.buttonVamosAVolar) as Button
+        avolarBtn!!.setOnClickListener(this)
 
+    }
+    override fun onClick(v:View) {
+        when (v.id) {
+            R.id.buttonVamosAVolar -> {
+                Toast.makeText(this@Bienvenidos, "Pulse login.", Toast.LENGTH_SHORT).show()
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val i = Intent(this@Bienvenidos, Home::class.java)
+                    startActivity(i) //iniciar nueva actividad
+                    finish()
+                }, 3000)
 
-        btnVamosaVolar.setOnClickListener {
-
-            Toast.makeText(this@Bienvenidos, "Pulse a volar.", Toast.LENGTH_SHORT).show()
-            Handler(Looper.getMainLooper()).postDelayed({
-                val i = Intent(this@Bienvenidos, Home::class.java)
-                startActivity(i) //start new activity
-                finish()
-            }, 3000)
+            }
+            else ->
+            {
+                Toast.makeText(this@Bienvenidos, "Error.", Toast.LENGTH_SHORT).show()
+            }
         }
-
-
     }
 
-    fun hideSystemUI() {
-        window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_IMMERSIVE
-                or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_FULLSCREEN)
-    }
+
 }

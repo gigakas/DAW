@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConexionBridgeDrone">
+
+    <EditText
+        android:id="@+id/editTextIPBridge"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:digits="0123456789.\n"
+        android:gravity="center"
+        android:hint="@string/wsbridge_ip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151"
+        android:imeOptions="actionDone"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="12sp"
+        android:autofillHints=""
+        tools:ignore="TextFields"/>
+
+    <TextView
+        android:id="@+id/textViewIPBridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP  Remota"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIPBridge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

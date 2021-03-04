@@ -2,7 +2,6 @@ package com.dji.daw
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -117,17 +116,18 @@ class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, Popup
         findViewById<View>(R.id.complete_ui_widgets).setOnClickListener(this)
         findViewById<View>(R.id.bt_customized_ui_widgets).setOnClickListener(this)
         findViewById<View>(R.id.bt_map_widget).setOnClickListener(this)
+
         val versionText = findViewById<View>(R.id.version) as TextView
         versionText.text = resources.getString(R.string.sdk_version, DJISDKManager.getInstance().sdkVersion)
         bridgeModeEditText = findViewById<View>(R.id.edittext_bridge_ip) as EditText
         bridgeModeEditText!!.setText(PreferenceManager.getDefaultSharedPreferences(this).getString(LAST_USED_BRIDGE_IP, ""))
-        bridgeModeEditText!!.setOnEditorActionListener { v: TextView?, actionId: Int, event: KeyEvent? ->
+        bridgeModeEditText!!.setOnEditorActionListener{ v: TextView?, actionId: Int, event: KeyEvent? ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE || event != null && event.action == KeyEvent.ACTION_DOWN && event.keyCode == KeyEvent.KEYCODE_ENTER) {
                 if (event != null && event.isShiftPressed) {
                     return@setOnEditorActionListener false
                 } else {
                     // detectar ip en modo-puente si existe algun valor
-                    handleBridgeIPTextChange()
+                    controlRemotoIP()
                 }
             }
             false // pasar el valor a otro servicio.
@@ -140,7 +140,7 @@ class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, Popup
                     // detectar si el usaurio escribe algun texto
                     val currentText = bridgeModeEditText!!.text.toString()
                     bridgeModeEditText!!.setText(currentText.substring(0, currentText.indexOf('\n')))
-                    handleBridgeIPTextChange()
+                    controlRemotoIP()
                 }
             }
         })
@@ -206,11 +206,11 @@ class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, Popup
         val nextActivityClass: Class<*>
         val id = view.id
         if (id == R.id.complete_ui_widgets) {
-            nextActivityClass = WidgetPrincipalActividad::class.java
+            nextActivityClass = WidgetVueloFPV::class.java
         } else if (id == R.id.bt_customized_ui_widgets) {
             nextActivityClass = WidgetsActividadesPersonalizadas::class.java
         } else {
-            nextActivityClass = MapWidgetActivity::class.java
+            MapWidgetActivity::class.java
             val popup = PopupMenu(this, view)
             popup.setOnMenuItemClickListener(this)
             val popupMenu = popup.menu
@@ -240,7 +240,7 @@ class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, Popup
         return false
     }
 
-    private fun handleBridgeIPTextChange() {
+    private fun controlRemotoIP() {
         //El usuario ha escrito una IP y se almacena
         val bridgeIP = bridgeModeEditText!!.text.toString()
         if (!TextUtils.isEmpty(bridgeIP)) {
@@ -253,7 +253,7 @@ class TestComponent : AppCompatActivityFullScreen(), View.OnClickListener, Popup
 
     companion object {
         private const val TAG = "MainActivity"
-        private const val LAST_USED_BRIDGE_IP = "bridgeip"
+        const val LAST_USED_BRIDGE_IP = "bridgeip"
         var isStarted = false
             private set
         private val REQUIRED_PERMISSION_LIST = arrayOf(

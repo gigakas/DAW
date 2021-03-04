@@ -129,5 +129,6 @@
     <string name="maximum_height">Maximum Height</string>
     <string name="self_unlocked">Self Unlocked</string>
     <string name="custom_unlocked_zone">Custom Unlocked Zone</string>
+    <string name="regresar">Regresar</string>
 
 </resources>

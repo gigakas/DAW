@@ -47,9 +47,9 @@ class DJIControl (val applicationContext: Context) {
 
             //Detectar cambions en el hardware del drone y su conexion al mando
             override fun onProductChanged(product: BaseProduct) {}
-            override fun onComponentChange(key: BaseProduct.ComponentKey?,
-                                           oldComponent: BaseComponent?,
-                                           newComponent: BaseComponent?) {
+        override fun onComponentChange(key: BaseProduct.ComponentKey?,
+                                       oldComponent: BaseComponent?,
+                                       newComponent: BaseComponent?) {
                 Toast.makeText(applicationContext,
                         "$key Detectado Cambio",
                         Toast.LENGTH_LONG).show()
