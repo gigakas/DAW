@@ -4,6 +4,6 @@
  
 
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://youtu.be/la1viJwSr5o)
+[![Demo CountPages alpha](https://github.com/gigakas/DAW/blob/master/screenshots/splash.png)](https://youtu.be/la1viJwSr5o)
 
 
