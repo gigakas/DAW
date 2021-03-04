@@ -28,6 +28,7 @@ class PermisosApp (val activity: Activity) {
                     Manifest.permission.READ_EXTERNAL_STORAGE,  // Log lectura
                     Manifest.permission.READ_PHONE_STATE,  // Identificacion del dispositivo una vez conectado
                     Manifest.permission.RECORD_AUDIO // control altavoces
+
             ), 1)
         }
 

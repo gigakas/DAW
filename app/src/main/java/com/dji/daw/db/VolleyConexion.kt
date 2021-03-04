@@ -10,6 +10,7 @@ class VolleyConexion : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+        //pendiente de revisar
     }
 
     val requestQueue: RequestQueue? = null
