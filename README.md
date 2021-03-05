@@ -3,12 +3,7 @@
  Integracion SDK DJI, prototipo
  
 
-![name-of-you-image](https://github.com/gigakas/DAW/blob/master/screenshots/splash.png?raw=true)
 
-
-![name-of-you-image](https://github.com/gigakas/DAW/blob/master/screenshots/LOGIN.png?raw=true)
-
-
-![name-of-you-image](https://github.com/gigakas/DAW/blob/master/screenshots/fly.jpg?raw=true)
+[![Demo CountPages alpha](https://github.com/gigakas/DAW/blob/master/screenshots/splash.png)](https://youtu.be/la1viJwSr5o)
 
 
