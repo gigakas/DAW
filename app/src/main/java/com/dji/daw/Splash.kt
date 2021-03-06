@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.dji.daw.controles.AppCompatActivityFullScreen
-import com.dji.daw.db.ConexionDB
 
 class Splash :AppCompatActivityFullScreen() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -53,7 +53,9 @@ class Login : AppCompatActivityFullScreen(), View.OnClickListener {
         when (v.id) {
             R.id.buttonLogin -> {
 
-                VolleySolicitudes().loginUser(this@Login,correo?.text.toString(),password?.text.toString())
+                val usuario = correo?.text.toString()
+                val password = password?.text.toString()
+                VolleySolicitudes().loginUser(this@Login,Bienvenidos::class.java,usuario,password,"Usuario Aceptado")
 
             }
             R.id.buttonRegistroNuevoUsuario -> {

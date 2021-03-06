@@ -37,4 +37,5 @@ abstract class AppCompatActivityFullScreen : AppCompatActivity() {
     }
 
 
+
 }

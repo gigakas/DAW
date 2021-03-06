@@ -14,7 +14,6 @@ class Profile : AppCompatActivityFullScreen() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-        hideSystemUI()
 
         val btnRegresarProfile = findViewById<Button>(R.id.buttonRegresarProfile)
         btnRegresarProfile.setOnClickListener {
@@ -26,14 +25,5 @@ class Profile : AppCompatActivityFullScreen() {
             }, 3000)
         }
 
-    }
-
-    private fun hideSystemUI() {
-        window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_IMMERSIVE
-                or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-               or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                or View.SYSTEM_UI_FLAG_FULLSCREEN)
     }
 }

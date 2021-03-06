@@ -32,7 +32,6 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:label, android:theme">
-        <activity android:name=".ConexionBridgeDrone"></activity>
         <!-- Run first activity -->
         <activity
             android:name=".Splash"
@@ -53,18 +52,18 @@
             android:name=".ProgramarRutas"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape" />
+
         <activity
-            android:name=".Eventos"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape" />
+            android:name=".Configuracion"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:immersive="true"
+            android:screenOrientation="sensorLandscape"/>
+
         <activity
             android:name=".Multimedia"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name=".Configuracion"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape" />
+
         <activity
             android:name=".Profile"
             android:launchMode="singleTop"

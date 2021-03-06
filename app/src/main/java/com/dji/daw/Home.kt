@@ -82,7 +82,7 @@ class Home : AppCompatActivityFullScreen(),View.OnClickListener {
             R.id.buttonEventos -> {
                 Toast.makeText(this@Home, "Pulse Eventos.", Toast.LENGTH_SHORT).show()
                 Handler(Looper.getMainLooper()).postDelayed({
-                    val i = Intent(this@Home, Eventos::class.java)
+                    val i = Intent(this@Home, Configuracion::class.java)
                     startActivity(i) //iniciar nueva actividad
                     //finish()
                 }, 3000)
@@ -99,7 +99,7 @@ class Home : AppCompatActivityFullScreen(),View.OnClickListener {
             R.id.floatingActionButtonAdmin -> {
                 Toast.makeText(this@Home, "Pulse Volar.", Toast.LENGTH_SHORT).show()
                 Handler(Looper.getMainLooper()).postDelayed({
-                    val i = Intent(this@Home, ConexionBridgeDrone::class.java)
+                    val i = Intent(this@Home, Configuracion::class.java)
                     startActivity(i) //iniciar nueva actividad
                 }, 3000)
 

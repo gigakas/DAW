@@ -24,7 +24,7 @@
     <string name="set_secondary_video_feed">Secondary</string>
     <string name="set_fpv_size">Resize</string>
     <string name="sdk_version">Version: %1$s</string>
-    <string name="wsbridge_ip">IP puente</string>
+    <string name="textViewCambioPassword">Cambio Contraseña</string>
     <string name="provider_google_maps">Google Maps</string>
     <string name="provider_here_maps">Here Maps</string>
     <string name="provider_amaps">AMaps</string>
@@ -75,7 +75,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="ganp">GANP</string>
-    <string name="name">Name</string>
+    <string name="passwordLogin">12345</string>
     <string name="emailLogin">Email</string>
     <string name="ingresar">Ingresar</string>
     <string name="registrarse">Registrarse</string>
@@ -89,15 +89,15 @@
     <string name="programa_tus_vuelos">Programa Tus Vuelos</string>
     <string name="registro">Registro</string>
     <string name="nombres">Nombres</string>
-    <string name="email">Email</string>
+    <string name="email">ganinop@unadvirtual.edu.co</string>
     <string name="registrar">Registrar</string>
     <string name="apellidos">Apellidos</string>
     <string name="pais">País</string>
     <string name="passwordRegistro">Password</string>
     <string name="passwordConfirmar">Password</string>
-    <string name="nombre_apellido">Nombre:</string>
-    <string name="correo">Correo:</string>
-    <string name="fecharegistro">FechaRegistro:</string>
+    <string name="nombre_apellido">nombre_apellido: Guillermo Niño</string>
+    <string name="correo">Correo:ganinop@unadvirtual.edu.co</string>
+    <string name="fecharegistro">Fecha Registro: 2021-02-10</string>
     <string name="tiempovuelo">TiempoVuelo:</string>
     <string name="direccion_servidor">Direccion Servidor</string>
     <string name="configuracion_red">Configuracion Red</string>
@@ -130,5 +130,17 @@
     <string name="self_unlocked">Self Unlocked</string>
     <string name="custom_unlocked_zone">Custom Unlocked Zone</string>
     <string name="regresar">Regresar</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="textViewCambioIP">IP Remota</string>
+    <string name="editTextHint">IP</string>
+    <string name="editTextNuevo_passwordHint">Nuevo Password</string>
+    <string name="confirmarPasswdBtn">Confirmar</string>
+    <string name="textViewSincronizacion">Sincronización</string>
+    <string name="editTextSincronizacionMin">1</string>
+    <string name="textViewVideoSinc">Sincronizar Video Cada:</string>
+    <string name="textEditVideoSinc">1</string>
+    <string name="textViewImgSinc">Sincronizar Imágenes Cada</string>
+    <string name="editTextBridgeTest">IP</string>
 
 </resources>
