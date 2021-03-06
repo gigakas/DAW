@@ -32,6 +32,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:label, android:theme">
+
         <!-- Run first activity -->
         <activity
             android:name=".Splash"
@@ -52,18 +53,15 @@
             android:name=".ProgramarRutas"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape" />
-
         <activity
             android:name=".Configuracion"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:immersive="true"
-            android:screenOrientation="sensorLandscape"/>
-
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".Multimedia"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape" />
-
         <activity
             android:name=".Profile"
             android:launchMode="singleTop"
@@ -158,6 +156,15 @@
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
             android:theme="@style/MapTheme" />
+
+        <activity android:name=".Eventos"
+            android:label="Map Widget"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+
+
     </application>
 
 </manifest>

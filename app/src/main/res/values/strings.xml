@@ -142,5 +142,6 @@
     <string name="textEditVideoSinc">1</string>
     <string name="textViewImgSinc">Sincronizar Imágenes Cada</string>
     <string name="editTextBridgeTest">IP</string>
+    <string name="buttonRegresarConfig">Regresar</string>
 
 </resources>

@@ -3,14 +3,13 @@ package com.dji.daw
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.TextUtils
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.EditText
-import android.widget.PopupMenu
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.preference.PreferenceManager
 import com.dji.daw.controles.AppCompatActivityFullScreen
 import dji.sdk.sdkmanager.DJISDKManager
@@ -36,7 +35,19 @@ class Configuracion : AppCompatActivityFullScreen() {
                 }
             }
             false // pasar el valor a otro servicio.
+
         }
+
+        val btnRegresarConfig = findViewById<Button>(R.id.buttonRegresarConfig)
+        btnRegresarConfig.setOnClickListener {
+            Toast.makeText(this@Configuracion, "Pulse regresar ", Toast.LENGTH_SHORT).show()
+            Handler(Looper.getMainLooper()).postDelayed({
+                val i = Intent(this@Configuracion, Home::class.java)
+                startActivity(i) //start new activity
+                finish()
+            }, 3000)
+        }
+
     }
 
     private fun controlRemotoIP() {
@@ -48,6 +59,7 @@ class Configuracion : AppCompatActivityFullScreen() {
             PreferenceManager.getDefaultSharedPreferences(this).edit().putString(TestComponent.LAST_USED_BRIDGE_IP, bridgeIP).apply()
         }
     }
+
 
 
 }

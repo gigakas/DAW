@@ -33,7 +33,7 @@ class VolleySolicitudes {
                             Handler(Looper.getMainLooper()).postDelayed({
                                 val i = Intent(contextoActual, contextSiguiente)
                                 contextoActual.startActivity(i)
-                                (contextoActual.applicationContext as Activity).finish()
+                                //(contextoActual.applicationContext as Activity).finish()
 
                             }, 2000)
 

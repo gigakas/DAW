@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="746dp"
         android:text="@string/textViewCambioIP"
         android:textStyle="bold"
@@ -23,32 +23,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextCambioPassword2"
-        android:layout_width="135dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="4dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="left"
-        android:hint="@string/editTextNuevo_passwordHint"
-        android:imeOptions="actionDone"
-        android:maxLength="15"
-        android:maxLines="1"
-        android:padding="4dp"
-        android:textColor="@color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/editTextCambioPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextCambioPassword"
-        tools:ignore="RtlHardcoded,TextFields" />
-
-
-    <EditText
         android:id="@+id/editTextIP"
         android:layout_width="135dp"
         android:layout_height="28dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="690dp"
         android:autofillHints=""
         android:digits="0123456789.\n"
@@ -80,7 +59,23 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextSicronizacionImg"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSincronizacionImg" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSincronizacionImg"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/textViewCambioPassword"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="689dp"
+        android:text="@string/textViewCambioPassword"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIP" />
 
     <EditText
         android:id="@+id/editTextCambioPassword"
@@ -88,7 +83,7 @@
         android:layout_width="135dp"
         android:layout_height="28dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="left"
@@ -104,11 +99,50 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewCambioPassword"
         tools:ignore="RtlHardcoded,TextFields" />
 
+    <TextView
+        android:id="@+id/textViewSincronizacionImg"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="719dp"
+        android:text="@string/textViewSincronizacion"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCambioPassword" />
+
+    <Button
+        android:id="@+id/buttonConfirmarPassw"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/confirmarPasswdBtn"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextCambioPassword2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <TextView
+        android:id="@+id/textViewVideoSinc"
+        android:layout_width="149dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginBottom="208dp"
+        android:text="@string/textViewVideoSinc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSincronizacionImg"
+        app:layout_constraintVertical_bias="0.36" />
+
     <EditText
         android:id="@+id/editTextSicronizacionImg"
         android:layout_width="33dp"
         android:layout_height="28dp"
-        android:layout_marginStart="210dp"
+        android:layout_marginStart="208dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="208dp"
         android:autofillHints=""
@@ -126,48 +160,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCambioPassword2"
+        app:layout_constraintVertical_bias="0.367"
         tools:ignore="TextFields" />
-
-    <Button
-        android:id="@+id/buttonConfirmarPassw"
-        android:layout_width="92dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:text="@string/confirmarPasswdBtn"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextCambioPassword2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277" />
-
-    <TextView
-        android:id="@+id/textViewCambioPassword"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="689dp"
-        android:text="@string/textViewCambioPassword"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextIP" />
-
-    <TextView
-        android:id="@+id/textViewSincronizacionImg"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="719dp"
-        android:text="@string/textViewSincronizacion"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCambioPassword" />
 
     <EditText
         android:id="@+id/editTextSicronizacionVideo"
@@ -191,21 +185,46 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/textViewImgSinc"
         app:layout_constraintTop_toBottomOf="@+id/editTextCambioPassword2"
+        app:layout_constraintVertical_bias="0.367"
         tools:ignore="TextFields" />
 
-    <TextView
-        android:id="@+id/textViewVideoSinc"
-        android:layout_width="149dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/textViewVideoSinc"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/editTextCambioPassword2"
+        android:layout_width="135dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="left"
+        android:hint="@string/editTextNuevo_passwordHint"
+        android:imeOptions="actionDone"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextCambioPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextCambioPassword"
+        tools:ignore="RtlHardcoded,TextFields" />
+
+    <Button
+        android:id="@+id/buttonRegresarConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="755dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/buttonRegresarConfig"
+        app:layout_constraintBottom_toTopOf="@+id/textViewICambioIPBridge"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSincronizacionImg"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

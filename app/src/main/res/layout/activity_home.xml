@@ -94,6 +94,7 @@
         android:layout_height="wrap_content"
         android:backgroundTintMode="src_in"
         android:clickable="true"
+        android:visibility="invisible"
         app:backgroundTint="#E64A19"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
