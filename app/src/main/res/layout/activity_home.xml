@@ -10,13 +10,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="370dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="154dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/buttonProfile"
@@ -94,9 +95,11 @@
         android:layout_height="wrap_content"
         android:backgroundTintMode="src_in"
         android:clickable="true"
+        android:contentDescription="@string/layoutHome"
+        android:focusable="true"
         android:visibility="invisible"
         app:backgroundTint="#E64A19"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"

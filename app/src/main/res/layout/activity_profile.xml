@@ -25,10 +25,9 @@
         android:id="@+id/textViewNombreFull"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="153dp"
         android:text="@string/nombre_apellido"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,45 +35,39 @@
         android:id="@+id/textViewCorreo"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="332dp"
+        android:layout_marginBottom="216dp"
         android:text="@string/correo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNombreFull"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreFull" />
 
     <TextView
         android:id="@+id/textViewFechaRegistro"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="284dp"
         android:text="@string/fecharegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
 
     <TextView
         android:id="@+id/textViewTiempoVuelo"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="320dp"
 
-        android:layout_marginBottom="153dp"
+        android:layout_marginStart="8dp"
         android:text="@string/tiempovuelo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFechaRegistro"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFechaRegistro" />
 
     <Button
         android:id="@+id/buttonRegresarProfile"

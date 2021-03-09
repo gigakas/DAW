@@ -143,5 +143,6 @@
     <string name="textViewImgSinc">Sincronizar Imágenes Cada</string>
     <string name="editTextBridgeTest">IP</string>
     <string name="buttonRegresarConfig">Regresar</string>
+    <string name="layoutHome">TODO</string>
 
 </resources>
