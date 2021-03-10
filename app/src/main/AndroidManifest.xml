@@ -54,10 +54,11 @@
 
         <meta-data
             android:name="com.dji.sdk.API_KEY"
-            android:value="@string/key_dji_API" /> <!-- Google Maps -->
+            android:value="@string/key_dji_API" />
+        <!-- Google Maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/key_googleMaps_API" /> <!-- Here Maps -->
+            android:value="@string/key_googleMaps_API" />
 
 
         <!-- Actividades app -->
