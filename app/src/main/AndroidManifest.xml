@@ -45,6 +45,59 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!--  -->
+
+        <!-- DJI SDK -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library android:name="com.android.future.usb.accessory" />
+
+        <meta-data
+            android:name="com.dji.sdk.API_KEY"
+            android:value="@string/key_dji_API" /> <!-- Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/key_googleMaps_API" /> <!-- Here Maps -->
+
+
+        <!-- Actividades app -->
+        <activity
+            android:name=".ControlUSBConexionActividad"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+
+        <activity
+            android:name=".WidgetVueloFPV"
+            android:label="Default Widgets"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".WidgetsActividadesPersonalizadas"
+            android:label="Customized Widgets"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".MapWidgetActivity"
+            android:label="Map Widget"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/MapTheme" />
+
+        <activity android:name=".Eventos"
+            android:label="Map Widget"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
         <activity
             android:name=".TablaRutas"
             android:launchMode="singleTop"
@@ -83,87 +136,6 @@
             android:immersive="true"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape" />
-        <!--
-<activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login"
-            tools:ignore="MissingClass" />
-        -->
-        <!-- DJI SDK -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-        <uses-library android:name="com.android.future.usb.accessory" />
-
-        <meta-data
-            android:name="com.dji.sdk.API_KEY"
-            android:value="@string/key_dji_API" /> <!-- Google Maps -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/key_googleMaps_API" /> <!-- Here Maps -->
-        <meta-data
-            android:name="com.here.android.maps.appid"
-            android:value="Enter your API key here" />
-        <meta-data
-            android:name="com.here.android.maps.apptoken"
-            android:value="Enter your API key here" />
-        <meta-data
-            android:name="com.here.android.maps.license.key"
-            android:value="Enter your API key here" />
-
-        <service
-            android:name="com.here.android.mpa.service.MapService"
-            android:exported="false"
-            android:label="HereMapService">
-            <intent-filter>
-
-                <!-- Note, action name should not be changed. -->
-                <action android:name="com.here.android.mpa.service.MapService.v3" />
-            </intent-filter>
-        </service> <!-- AMaps -->
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="Enter your API key here" /> <!-- Actividades app -->
-        <activity
-            android:name=".TestComponent"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".ControlUSBConexionActividad"
-            android:theme="@android:style/Theme.Translucent">
-            <intent-filter>
-                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
-                android:resource="@xml/accessory_filter" />
-        </activity>
-        <activity
-            android:name=".WidgetVueloFPV"
-            android:label="Default Widgets"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name=".WidgetsActividadesPersonalizadas"
-            android:label="Customized Widgets"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name=".MapWidgetActivity"
-            android:label="Map Widget"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/MapTheme" />
-
-        <activity android:name=".Eventos"
-            android:label="Map Widget"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
-
-
 
     </application>
 
