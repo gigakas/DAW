@@ -72,4 +72,4 @@ Thumbs.db
 import-summary.txt
 
 #keys
-app\src\main\res\values\keysAPI.xml
+.app\src\main\res\values\keysAPI.xml

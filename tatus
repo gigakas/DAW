@@ -1,0 +1,428 @@
+[33mcommit 2b2ecaf94f4b5808dcc989fd62e0270a42091c50[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 17:18:19 2021 -0500
+
+    - Correccion de errores en el manifiesto
+    
+    Signed-off-by: Guillermo Niño <guillermo@albanss.com>
+
+[33mcommit 85b34c3ae95b03035223910fa59e9d68f6233bab[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 17:14:47 2021 -0500
+
+    - Correccion de errores en el manifiesto
+    
+    Signed-off-by: Guillermo Niño <guillermo@albanss.com>
+
+[33mcommit 974ef10937b31f137999d6bcbc7db3e6b8e1fe03[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 17:14:02 2021 -0500
+
+    - Correccion de errores en el manifiesto
+    
+    Signed-off-by: Guillermo Niño <guillermo@albanss.com>
+
+[33mcommit 4471df51a45496b41ff83512c366a5782924c301[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 17:11:28 2021 -0500
+
+    - Correccion de errores en el manifiesto
+    
+    Signed-off-by: Guillermo Niño <guillermo@albanss.com>
+
+[33mcommit 6987f9ba05af8ce74f033f1373e000aec471806e[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 16:56:22 2021 -0500
+
+    Revert "Update keysAPI.xml"
+    
+    This reverts commit 41d05e8d
+    
+    Signed-off-by: Guillermo Niño <guillermo@albanss.com>
+
+[33mcommit 6598e22612ef8d7383019ec697a51cfbbf75512c[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 16:48:24 2021 -0500
+
+    - Correccion de errores en el manifiesto
+
+[33mcommit fed06396984254d715560a96923598453f3c1a01[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Mar 10 16:44:10 2021 -0500
+
+    - Correccion de errores en el manifiesto
+
+[33mcommit 41d05e8de7315d131a42ff364fc48acfe66163ce[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Mon Mar 8 20:52:22 2021 -0500
+
+    Update keysAPI.xml
+
+[33mcommit 802389a89c238180e5c66a38e054dc7cd5e9a95e[m
+Author: guill <guillermo@albanss.com>
+Date:   Mon Mar 8 19:37:28 2021 -0500
+
+    - Correccion de estilos graficos
+
+[33mcommit 5de819fa9bd61b0a19f33c73930c7f138ac3e65f[m
+Author: guill <guillermo@albanss.com>
+Date:   Sat Mar 6 16:18:00 2021 -0500
+
+    - Eventos conexion a servidor y descaraga de datos por webview
+
+[33mcommit 573250d205704ca5c1ccf7e7468ff2792970a583[m
+Author: guill <guillermo@albanss.com>
+Date:   Sat Mar 6 13:35:51 2021 -0500
+
+    - Revision estilos y organizacion de actividades
+
+[33mcommit bc508a7dc0d13428f8dbd78fe8c0e595ecf2a22e[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Mar 5 20:25:40 2021 -0500
+
+    - Revision estilos y organizacion de actividades
+
+[33mcommit 7ad84dc6354e5c04038ce727f8b1c4afde5dffe6[m
+Merge: 8bb5cfe e57217f
+Author: guill <guillermo@albanss.com>
+Date:   Fri Mar 5 08:34:41 2021 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 8bb5cfeecba7f581ff9fd5fcef953cc93e2dba0c[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Mar 5 08:34:05 2021 -0500
+
+    - Clase volley para validar usuario ok
+
+[33mcommit f2e29bb0237bee6469a580ef81b86f1415f74473[m[33m ([m[1;32m9-LoginAcciones[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Mar 4 15:58:54 2021 -0500
+
+    - Clase volley para validar usuario ok
+
+[33mcommit e57217f48cb62775f307feb384ed27bffd8b4d04[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Thu Mar 4 10:33:56 2021 -0500
+
+    Update README.md
+
+[33mcommit 83c8c9f088e444a5f92b15f619464c4c89259178[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Thu Mar 4 10:31:06 2021 -0500
+
+    Update README.md
+
+[33mcommit 9e74e82567ce6e0127654f2109dce1f9eb831362[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Thu Mar 4 10:30:15 2021 -0500
+
+    Update README.md
+
+[33mcommit fe068e231ccd26c6eecb7c9191bec1797a97cf98[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Thu Mar 4 10:29:18 2021 -0500
+
+    Update README.md
+
+[33mcommit 0b6119c294ed5bc8552463acd806adf53b40d820[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Mar 4 10:00:40 2021 -0500
+
+    - pruebas con libreria Volley
+    - correcciones de errores en el login y estilos
+    - integracion capacidad de conexion en bridge a un drone remoto
+
+[33mcommit 65b0ad2a2b78e5fa42d099dc2dd2c8bddd0c2058[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Mar 4 09:57:47 2021 -0500
+
+    - pruebas con libreria Volley
+    - correcciones de errores en el login y estilos
+
+[33mcommit 0711bf1356f9275aa21c3140942e75ef893de363[m[33m ([m[1;32m8-RegistrarSDK[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Mon Mar 1 07:10:03 2021 -0500
+
+    - Se agrega clase de registro a DJI full soportada para kotlin
+    - Cambio de los layouts a full screen continua desahabilitando el sleep
+    - se crea clase de estilos para aplicar el modo fullscreen de Android
+
+[33mcommit 34020943e5c1ce8158f8bc283d35e34116e337f7[m
+Merge: 26f23c1 e19bb20
+Author: guill <guillermo@albanss.com>
+Date:   Mon Mar 1 07:00:54 2021 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 26f23c1bb9694dde94f8c43c6874e99e39860b7d[m
+Author: guill <guillermo@albanss.com>
+Date:   Mon Mar 1 06:59:55 2021 -0500
+
+    - Se agrega clase de registro a DJI full soportada para kotlin
+    - Cambio de los layouts a full screen continua desahabilitando el sleep
+    - se crea clase de estilos para aplicar el modo fullscreen de Android
+
+[33mcommit e19bb202ae7f2c4ad1db0f08512cc7386aa2365c[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Fri Feb 26 19:06:14 2021 -0500
+
+    Update keysAPI.xml
+
+[33mcommit b032d0162af7b80047f110726c8af235ebc30d40[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 19:02:57 2021 -0500
+
+    - Se agrega clase de registro a DJI full soportada para kotlin
+    - Cambio de los layouts a full screen continua desahabilitando el sleep
+    - se crea clase de estilos para aplicar el modo fullscreen de Android
+
+[33mcommit fa2988b3d353d46db43304f65432269a9435ab9e[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 14:23:31 2021 -0500
+
+    Full kotlin support for all code
+
+[33mcommit cd3149f4953ab5648c82f710041673f3def13fa9[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 14:20:27 2021 -0500
+
+    Full kotlin support for all code
+
+[33mcommit d07d0fb52648cafb4ede062790a27a5fa3c91637[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 10:16:11 2021 -0500
+
+    organizado modo grafico menu navegacion aeronave
+
+[33mcommit dd6771d85fc59c1274b3af75351c34b008aecc32[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 07:20:31 2021 -0500
+
+    organizado modo grafico menu navegacion aeronave
+
+[33mcommit 109916f4af3fa6bc5fbd87a31af776094a5f1205[m
+Author: guill <guillermo@albanss.com>
+Date:   Fri Feb 26 07:08:45 2021 -0500
+
+    organizado modo grafico menu navegacion aeronave
+
+[33mcommit b677f689c0cbc1ed8d1fabf158c601aa67f2684f[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Feb 25 18:38:00 2021 -0500
+
+    fix problems
+    android.preference.PreferenceManager
+    remplace with
+    androidx.preference.PreferenceManager
+    
+    on file  TestComponent.java
+
+[33mcommit 332eb293148797f9be3d7a8571cd5bfb6259c059[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Feb 25 17:30:34 2021 -0500
+
+    cambio de nombre de la clase mainActivity en java
+
+[33mcommit 38ab5c2844d16193af84249bc2b4728f683f1865[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Feb 25 14:50:40 2021 -0500
+
+    Configuracion botones regresar del menu home
+
+[33mcommit cd7392072934f2832cd9ef9ea9dd25bae54edce2[m
+Author: guill <guillermo@albanss.com>
+Date:   Thu Feb 25 14:26:28 2021 -0500
+
+    Configuracion botones regresar del menu home
+
+[33mcommit bf2dec472e22677f7faf4420c740dedfdd5ad589[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Feb 3 22:44:46 2021 -0500
+
+    Update README.md
+
+[33mcommit 27ca19c6767fbe256fcf2b6fa3832ca9e6f257a6[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 22:41:54 2021 -0500
+
+    Agregados los splash app
+
+[33mcommit 299eb4d81e484310d469b915a997ef6f902e9ab8[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 22:39:00 2021 -0500
+
+    Agregados los splash app
+
+[33mcommit d71e190e39c75931b0d5d13098e844901d2edb01[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Wed Feb 3 22:35:25 2021 -0500
+
+    Update README.md
+
+[33mcommit 00e6ec82a339b0a24abdea8c7eddd4608158174a[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 22:31:22 2021 -0500
+
+    Agregados los splash app
+
+[33mcommit bcdc96905c2b9929b3a8a9db416e89bf2c598a3e[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 14:54:26 2021 -0500
+
+    Agregados las vistas de las actividades
+
+[33mcommit 474aa4a6e057e777a8f1fc8970b3f0001a21e93f[m[33m ([m[1;32m7-configuracion[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 14:47:58 2021 -0500
+
+    Formulario config OK
+
+[33mcommit 8aaee26c0377d26617dbb54e3160fc01a28dfe56[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 13:10:50 2021 -0500
+
+    Formulario profile OK
+
+[33mcommit d5364376c268cfbae154bec4196e9acc9f3fe6a9[m[33m ([m[1;32m6-profile[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 13:08:17 2021 -0500
+
+    Formulario profile OK
+
+[33mcommit 4e82a1f62d6f76d1f126179b883fd347db036681[m
+Author: guill <guillermo@albanss.com>
+Date:   Wed Feb 3 12:39:29 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+    - Clase Conexion DB
+
+[33mcommit 7901009855b6926d4204edc8a0848f8c499a7eba[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Tue Feb 2 18:09:13 2021 -0500
+
+    Update keysAPI.xml
+
+[33mcommit 1c1e3f3abcd93d3ede40e5a87625971073e74785[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Tue Feb 2 18:07:09 2021 -0500
+
+    Update README.md
+
+[33mcommit 98ea5e2d0661f3c6b57609aa3e5caa2cc0437fc3[m
+Author: Guillermo Niño <guillermo@albanss.com>
+Date:   Tue Feb 2 18:06:42 2021 -0500
+
+    Create README.md
+
+[33mcommit 4a35f291c6be9b0cabb437f9cfe107b45b152ca2[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 18:04:47 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+    - Clase Conexion DB
+
+[33mcommit 766be62d89e13e0b3d8b4fca62cacc591c682384[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 18:00:57 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+
+[33mcommit 8bca1a6055887c64d6a94d2fa2b2029598e4da62[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 17:57:44 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+
+[33mcommit 8d56192627486a5a0f73cedf0071fb786e48c953[m[33m ([m[1;32m5-home[m[33m, [m[1;32m4-registroUsuarios[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 16:56:30 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+
+[33mcommit 05b0e3859822360ed6f112198d670766e436dbed[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 16:04:21 2021 -0500
+
+    Formulario Home OK
+    
+    - Pantalla panoramica ok
+    - Revisados estilos ok
+
+[33mcommit cf78f305a19caee5cea4e35a8534be9882091dc3[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 15:39:28 2021 -0500
+
+    Formulario Hiome OK
+    
+    - Pantalla panoramica ok
+
+[33mcommit b59fbd0c257aef44a6d1e4becaa48a52b83dc10f[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 15:04:45 2021 -0500
+
+    Registro formulario OK
+    
+    - Pantalla panoramica ok
+
+[33mcommit 780ae5aed97b0e9dac6ee34746043ab8f42f9a10[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 15:02:17 2021 -0500
+
+    Registro formulario OK
+
+[33mcommit 5760487e42768d97b8d10f733d5ec9fddc33a6b8[m[33m ([m[1;32m3-bienvenidos[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 14:26:20 2021 -0500
+
+    Bienvenido Diseño ok
+    
+    - Se corrigio tamaño de furmulario
+    
+    Pendientes
+
+[33mcommit c2b3a95328c2159a85c5e4d5d4ca8cbf2062a9ca[m[33m ([m[1;32m2-Login[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 12:51:11 2021 -0500
+
+    Login Diseño ok
+    
+    - Se corrigio tamaño de furmulario
+    
+    Pendientes
+    - Revisar los textos de version y creacion en las partes laterales de la vista
+
+[33mcommit 7cb913a4aafef70f0ff9bd3ec0e2c69f2670329b[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 12:14:08 2021 -0500
+
+    Login Diseño ok
+    
+    - Revisar los textos de version y creacion en las partes laterales de la vista
+
+[33mcommit 078df669464ddcafd03a557a0b4cc0130f4f98e4[m[33m ([m[1;32m1-Splash[m[33m)[m
+Author: guill <guillermo@albanss.com>
+Date:   Tue Feb 2 08:24:08 2021 -0500
+
+    Splash funcionando OK
+
+[33mcommit cc1387b476bd5f2531fc110cffe8d476183e57a3[m
+Author: guill <guillermo@albanss.com>
+Date:   Mon Feb 1 17:56:58 2021 -0500
+
+    Proyecto Inicial
