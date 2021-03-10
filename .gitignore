@@ -70,3 +70,6 @@ Thumbs.db
 
 # Import summary file
 import-summary.txt
+
+#keys
+app\src\main\res\values\keysAPI.xml
