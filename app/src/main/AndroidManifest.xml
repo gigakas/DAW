@@ -63,7 +63,7 @@
 
         <!-- Actividades app -->
         <activity
-            android:name=".ControlUSBConexionActividad"
+            android:name=".controles.ControlUSBConexionActividad"
             android:theme="@android:style/Theme.Translucent">
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
@@ -80,18 +80,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name=".WidgetsActividadesPersonalizadas"
-            android:label="Customized Widgets"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name=".MapWidgetActivity"
-            android:label="Map Widget"
-            android:launchMode="singleTop"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/MapTheme" />
+
 
         <activity android:name=".Eventos"
             android:label="Map Widget"

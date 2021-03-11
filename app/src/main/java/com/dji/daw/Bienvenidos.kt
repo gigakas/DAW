@@ -30,7 +30,7 @@ class Bienvenidos : AppCompatActivityFullScreen(), View.OnClickListener {
     override fun onClick(v:View) {
         when (v.id) {
             R.id.buttonVamosAVolar -> {
-                Toast.makeText(this@Bienvenidos, "Pulse login.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Bienvenidos, "Pulse a volar.", Toast.LENGTH_SHORT).show()
                 Handler(Looper.getMainLooper()).postDelayed({
                     val i = Intent(this@Bienvenidos, Home::class.java)
                     startActivity(i) //iniciar nueva actividad

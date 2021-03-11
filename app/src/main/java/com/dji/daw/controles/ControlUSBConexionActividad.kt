@@ -1,4 +1,4 @@
-package com.dji.daw
+package com.dji.daw.controles
 
 import android.app.Activity
 import android.content.Intent

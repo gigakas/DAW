@@ -4,6 +4,8 @@ import android.app.Application
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.IntentFilter
+import com.dji.daw.controles.ControlUSBConexionActividad
+import com.dji.daw.controles.DetectarControlUSB
 import com.secneo.sdk.Helper
 
 class MAplicacion : Application() {

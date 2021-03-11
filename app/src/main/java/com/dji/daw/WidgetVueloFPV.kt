@@ -12,7 +12,7 @@ import android.view.animation.Animation
 import android.view.animation.Transformation
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
-import com.dji.daw.ObjetoDensidadPX.dip2px
+import com.dji.daw.controles.ObjetoDensidadPX.dip2px
 import dji.common.airlink.PhysicalSource
 import dji.keysdk.CameraKey
 import dji.keysdk.KeyManager
@@ -52,18 +52,18 @@ class WidgetVueloFPV : Activity() {
         deviceHeight = outPoint.y
         deviceWidth = outPoint.x
         mapWidget = findViewById(R.id.map_widget)
-        mapWidget?.initGoogleMap(OnMapReadyListener { map ->
+        mapWidget?.initGoogleMap { map ->
             map.setOnMapClickListener { onViewClick(mapWidget) }
             map.uiSettings.setZoomControlsEnabled(false)
-        })
+        }
         mapWidget?.onCreate(savedInstanceState)
         parentView = findViewById<View>(R.id.root_view) as ViewGroup
         fpvWidget = findViewById(R.id.fpv_widget)
-        fpvWidget?.setOnClickListener(View.OnClickListener { onViewClick(fpvWidget) })
+        fpvWidget?.setOnClickListener { onViewClick(fpvWidget) }
         primaryVideoView = findViewById<View>(R.id.fpv_container) as RelativeLayout
         secondaryVideoView = findViewById<View>(R.id.secondary_video_view) as FrameLayout
         secondaryFPVWidget = findViewById(R.id.secondary_fpv_widget)
-        secondaryFPVWidget?.setOnClickListener(View.OnClickListener { intercambiarCamaras() })
+        secondaryFPVWidget?.setOnClickListener { intercambiarCamaras() }
         if (VideoFeeder.getInstance() != null) {
             //If secondary video feed is already initialized, get video source
             updateSecondaryVideoVisibility(VideoFeeder.getInstance().secondaryVideoFeed.videoSource != PhysicalSource.UNKNOWN)
