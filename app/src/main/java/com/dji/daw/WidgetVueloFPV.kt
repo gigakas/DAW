@@ -63,7 +63,7 @@ class WidgetVueloFPV : Activity() {
         primaryVideoView = findViewById<View>(R.id.fpv_container) as RelativeLayout
         secondaryVideoView = findViewById<View>(R.id.secondary_video_view) as FrameLayout
         secondaryFPVWidget = findViewById(R.id.secondary_fpv_widget)
-        secondaryFPVWidget?.setOnClickListener { intercambiarCamaras() }
+        secondaryFPVWidget?.setOnClickListener({ intercambiarCamaras() })
         if (VideoFeeder.getInstance() != null) {
             //If secondary video feed is already initialized, get video source
             updateSecondaryVideoVisibility(VideoFeeder.getInstance().secondaryVideoFeed.videoSource != PhysicalSource.UNKNOWN)
