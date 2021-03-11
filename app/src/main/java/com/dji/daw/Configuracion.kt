@@ -20,15 +20,16 @@ import com.google.android.gms.common.GoogleApiAvailability
 import dji.log.DJILog
 import dji.sdk.sdkmanager.DJISDKManager
 
-class Configuracion : AppCompatActivityFullScreen() {
+class Configuracion : AppCompatActivityFullScreen(),View.OnClickListener {
 
     private var bridgeModeEditText: EditText? = null
     private val LAST_USED_BRIDGE_IP = "bridgeip"
+    protected var btnRegresarConfig: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_configuracion)
-
+        iniciarUI()
         bridgeModeEditText = findViewById<View>(R.id.editTextIP) as EditText
         bridgeModeEditText!!.setText(PreferenceManager.getDefaultSharedPreferences(this).getString(Configuracion.LAST_USED_BRIDGE_IP, ""))
         bridgeModeEditText!!.setOnEditorActionListener { v: TextView?, actionId: Int, event: KeyEvent? ->
@@ -44,17 +45,33 @@ class Configuracion : AppCompatActivityFullScreen() {
 
         }
 
-        val btnRegresarConfig = findViewById<Button>(R.id.buttonRegresarConfig)
-        btnRegresarConfig.setOnClickListener {
-            Toast.makeText(this@Configuracion, "Pulse regresar ", Toast.LENGTH_SHORT).show()
-            Handler(Looper.getMainLooper()).postDelayed({
-                val i = Intent(this@Configuracion, Home::class.java)
-                startActivity(i) //start new activity
-                finish()
-            }, 3000)
-        }
 
     }
+
+    private fun iniciarUI() {
+        btnRegresarConfig = findViewById<Button>(R.id.buttonRegresarConfig) as Button
+        btnRegresarConfig!!.setOnClickListener(this)
+
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.buttonRegresarConfig -> {
+                Toast.makeText(this@Configuracion, "Pulse regresar.", Toast.LENGTH_SHORT).show()
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val i = Intent(this@Configuracion, Home::class.java)
+                    startActivity(i) //iniciar nueva actividad
+                    finish()
+                }, 3000)
+            }
+
+            else -> {
+                Toast.makeText(this@Configuracion, "Error.", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
 
     private fun controlRemotoIP() {
         //El usuario ha escrito una IP y se almacena
@@ -74,6 +91,8 @@ class Configuracion : AppCompatActivityFullScreen() {
         private const val REQUEST_PERMISSION_CODE = 12345
 
     }
+
+
 
 
 }
