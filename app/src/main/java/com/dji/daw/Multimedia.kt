@@ -7,14 +7,11 @@ import android.os.Looper
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import android.widget.Toast.LENGTH_SHORT
 import com.dji.daw.controles.AppCompatActivityFullScreen
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_SHORT
 
-class Multimedia : AppCompatActivityFullScreen(), View.OnClickListener {
+open class Multimedia : AppCompatActivityFullScreen(), View.OnClickListener {
 
-    protected var btnRegresarMultimedia: Button? = null
+    private var btnRegresarMultimedia: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +21,7 @@ class Multimedia : AppCompatActivityFullScreen(), View.OnClickListener {
     }
 
     private fun iniciarUI() {
-        btnRegresarMultimedia = findViewById<Button>(R.id.buttonRegresarMultimedia) as Button
+        btnRegresarMultimedia = findViewById<Button>(R.id.buttonRegresarMultimedia)
         btnRegresarMultimedia!!.setOnClickListener(this)
 
     }
