@@ -166,6 +166,7 @@ class WidgetVueloFPV : Activity() {
         mapWidget!!.onResume()
     }
 
+
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         val runnable = Runnable { onResume() }
