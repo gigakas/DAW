@@ -82,7 +82,7 @@ allprojects {
 }
 
 dependencies {
-    implementation ('com.dji:dji-uxsdk:4.14-trial1', {
+    implementation ('com.dji:dji-uxsdk:4.14', {
         /**
          * Uncomment the "library-anti-distortion" if your app does not need Anti Distortion for Mavic 2 Pro and Mavic 2 Zoom.
          * Uncomment the "fly-safe-database" if you need database for release, or we will download it when DJISDKManager.getInstance().registerApp
@@ -122,7 +122,7 @@ dependencies {
     //     */
     //    // exclude group: 'com.amap.api'
     // })
-    compileOnly ('com.dji:dji-sdk-provided:4.14')
+    compileOnly ('com.dji:dji-sdk-provided:4.14.1')
 
     // AMAP: Do not include if publishing to Google Play Store
     implementation 'com.amap.api:3dmap:6.9.2'
@@ -139,14 +139,13 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.31"
     implementation 'androidx.preference:preference-ktx:1.1.1'
-    implementation 'com.android.volley:volley:1.1.1'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.8'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.8'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
-
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.2'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
     //noinspection GradleCompatible
     implementation 'com.android.support:recyclerview-v7:28.1.1'
     //noinspection GradleCompatible
@@ -155,6 +154,6 @@ dependencies {
 
 
     //HERE maps
-    implementation files('libs/HERE-sdk-3.15.0.aar')
+    //implementation files('libs/HERE-sdk-3.15.0.aar')
 
 }
