@@ -1,16 +1,9 @@
 package com.dji.daw.controles
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
-import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.dji.daw.Bienvenidos
-import com.dji.daw.R
 
 abstract class AppCompatActivityFullScreen : AppCompatActivity() {
 
@@ -37,5 +30,11 @@ abstract class AppCompatActivityFullScreen : AppCompatActivity() {
     }
 
 
+    companion object {
+        var usuarioOnlineTokenID:String = ""
+        var usuarioOnlineNombresComletos:String = ""
+        var usuarioOnlineCorreo:String = ""
+        var usuarioOnlineTipoUsuario:String = ""
+    }
 
 }

@@ -75,7 +75,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="ganp">GANP</string>
-    <string name="passwordLogin">12345</string>
+    <string name="passwordLogin" />
     <string name="emailLogin">Email</string>
     <string name="ingresar">Ingresar</string>
     <string name="registrarse">Registrarse</string>
@@ -89,16 +89,16 @@
     <string name="programa_tus_vuelos">Programa Tus Vuelos</string>
     <string name="registro">Registro</string>
     <string name="nombres">Nombres</string>
-    <string name="email">ganinop@unadvirtual.edu.co</string>
+    <string name="email" />
     <string name="registrar">Registrar</string>
     <string name="apellidos">Apellidos</string>
     <string name="pais">País</string>
     <string name="passwordRegistro">Password</string>
     <string name="passwordConfirmar">Password</string>
-    <string name="nombre_apellido">nombre_apellido: Guillermo Niño</string>
-    <string name="correo">Correo:ganinop@unadvirtual.edu.co</string>
-    <string name="fecharegistro">Fecha Registro: 2021-02-10</string>
-    <string name="tiempovuelo">TiempoVuelo:</string>
+    <string name="nombre_apellido">Nombres</string>
+    <string name="correo">Correo:</string>
+    <string name="tipoUsuarioProfile">Tipo Usuario:</string>
+    <string name="tokenProfile">Token ID:</string>
     <string name="direccion_servidor">Direccion Servidor</string>
     <string name="configuracion_red">Configuracion Red</string>
     <string name="nuevo_password">Nuevo Password</string>
@@ -144,5 +144,9 @@
     <string name="editTextBridgeTest">IP</string>
     <string name="buttonRegresarConfig">Regresar</string>
     <string name="layoutHome">TODO</string>
+    <string name="usuario">usuarioLogin</string>
+    <string name="usuarioLogin">usuarioLogin</string>
+    <string name="correoRegistro">correo</string>
+    <string name="logoLogin">LOGO</string>
 
 </resources>

@@ -83,9 +83,9 @@ class Configuracion : AppCompatActivityFullScreen(),View.OnClickListener {
         }
     }
 
-
+// variable global almacenada para recordar la IP ingresada anteriormente
     companion object {
-        private const val TAG = "MainActivity"
+        //private const val TAG = "MainActivity"
         const val LAST_USED_BRIDGE_IP = "bridgeip"
         var isStarted = false
         private const val REQUEST_PERMISSION_CODE = 12345

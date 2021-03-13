@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_splashsinfondo"
-        />
+        android:contentDescription="@string/logoLogin" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -26,9 +26,9 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="100dp"
-        android:autofillHints=""
+        android:autofillHints="@string/usuario"
         android:ems="10"
-        android:hint="@string/email"
+        android:hint="@string/usuarioLogin"
         android:inputType="textWebEmailAddress"
         android:paddingBottom="0sp"
         android:text="@string/email"

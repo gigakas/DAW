@@ -53,9 +53,28 @@ class Login : AppCompatActivityFullScreen(), View.OnClickListener {
         when (v.id) {
             R.id.buttonLogin -> {
 
+                val emailValidacion=  "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z0-9.]+"
                 val usuario = correo?.text.toString()
                 val password = password?.text.toString()
-                VolleySolicitudes().loginUser(this@Login,Bienvenidos::class.java,usuario,password,"Usuario Aceptado")
+
+                if(usuario.isEmpty() || password.isEmpty()){
+
+                    Toast.makeText(this@Login,"Por favor llenar todos los campos",Toast.LENGTH_SHORT).show()
+
+                }else{
+
+                    if( usuario.trim().matches(Regex(emailValidacion))){
+
+                        VolleySolicitudes().loginUser(this@Login,Bienvenidos::class.java,usuario,password)
+
+                    }else{
+
+                        Toast.makeText(this@Login,"El correo no tiene un formato valido",Toast.LENGTH_SHORT).show()
+                    }
+
+                }
+
+
 
             }
             R.id.buttonRegistroNuevoUsuario -> {

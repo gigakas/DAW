@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/ic_fondosplashoutlines"/>
 
     <TextView
-        android:id="@+id/textViewNombreFull"
+        android:id="@+id/textViewNombreFullProfile"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
@@ -32,42 +32,36 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewCorreo"
+        android:id="@+id/textViewCorreoProfile"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="332dp"
-        android:layout_marginBottom="216dp"
         android:text="@string/correo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNombreFull" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreFullProfile" />
 
     <TextView
-        android:id="@+id/textViewFechaRegistro"
+        android:id="@+id/textViewTipoUsuarioProfile"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="284dp"
-        android:text="@string/fecharegistro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        android:layout_marginTop="2dp"
+        android:text="@string/tipoUsuarioProfile"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreoProfile" />
 
     <TextView
-        android:id="@+id/textViewTiempoVuelo"
+        android:id="@+id/textViewTokenLoginProfile"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-
         android:layout_marginStart="8dp"
-        android:text="@string/tiempovuelo"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="89dp"
+        android:text="@string/tokenProfile"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegresarProfile"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFechaRegistro" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoUsuarioProfile" />
 
     <Button
         android:id="@+id/buttonRegresarProfile"
