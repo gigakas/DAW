@@ -35,6 +35,7 @@ abstract class AppCompatActivityFullScreen : AppCompatActivity() {
         var usuarioOnlineNombresComletos:String = ""
         var usuarioOnlineCorreo:String = ""
         var usuarioOnlineTipoUsuario:String = ""
+
     }
 
 }
